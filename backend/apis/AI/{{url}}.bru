@@ -1,0 +1,17 @@
+meta {
+  name: {{url}}
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{url}}/generate
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "prompt" : "Generate 10 JS tips"
+  }
+}
